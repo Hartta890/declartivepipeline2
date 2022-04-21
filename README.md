@@ -36,7 +36,7 @@ pipeline
      {
          success
          {
-             input message: 'waiting for Approval', submitter: 'jhum'
+             input message: 'waiting for Approval MDI', submitter: 'jhum'
              deploy adapters: [tomcat9(credentialsId: 'e8720653-0361-4e59-9940-2568564e4488', path: '', url: 'http://172.31.25.54:8080')], contextPath: 'prodaap', war: '**/*.war'
          }
          failure
